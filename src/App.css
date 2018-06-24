@@ -1,0 +1,192 @@
+input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+form .formRow {
+  display: block;
+  padding: 5px 10px;
+}
+
+.btn {
+  background: #337ab7;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 14px 9px 14px;
+  border: 0px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 30px auto 0px auto;
+  padding: 0;
+  width: 80%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table thead {
+  text-align: left;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+  cursor: pointer;
+}
+
+table tr.selected {
+  background-color: #bbb;
+}
+
+table tr:hover,
+table tr:focus {
+  background-color: #ddd;
+}
+
+table tr.selected:hover {
+  background-color: #bbb;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  word-wrap: break-word;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+    cursor: pointer;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pagination li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  background-color: #eee;
+}
+
+.pagination .disabled a {
+  cursor: not-allowed;
+  color: #777;
+}
+
+.pagination .disabled a:hover,
+.pagination .disabled a:hover {
+  background-color: #fff;
+}
+
+.pagination li:first-child a {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.pagination li:last-child a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.pagination a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination .active a {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.pagination .break a {
+  cursor: default;
+}
